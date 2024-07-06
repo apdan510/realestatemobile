@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'JurassicPark';
+  src: url('./JurassicPark.ttf') format('truetype');
+}
+
+.info-page-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.fixed-image {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 30%;
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.jurassic-park {
+  font-family: 'JurassicPark';
+  font-size: 8vw;
+  color: #FF69B4;
+  text-shadow: -2px -2px 0 #00BFFF, 2px -2px 0 #00BFFF, -2px 2px 0 #00BFFF, 2px 2px 0 #00BFFF;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-size: 2vw;
+  color: #000;
+  text-align: center;
+  margin-top: 0;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact-info div {
+  margin-top: 1rem;
+}
+
+.anchor-logo {
+  width: 10vw;
+  height: auto;
+  margin: 2rem auto;
+}
+
+.footer {
+  padding: 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  color: #000;
+  margin: 0.2rem 0;
+}
+
+.keller-watermark {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 20%;
+  height: auto;
+  z-index: 10;
+}
+
+@media (max-width: 600px) {
+  .jurassic-park {
+      font-size: 12vw;
+  }
+  .subtitle {
+      font-size: 4vw;
+  }
+  .anchor-logo {
+      width: 25vw;
+  }
+  .contact-info {
+      font-size: 4vw;
+  }
+}
